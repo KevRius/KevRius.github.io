@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<title>Chicago Cubs</title>
+<style>
+body { 
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "nav article links"
+    "footer footer footer";
+  grid-template-rows: 60px 1fr 60px;
+  grid-template-columns: 25% 1fr 25%;
+  grid-gap: 10px;
+  height: 100vh;
+  margin: 0;
+  color: white;
+  }
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 575px) {
+  body { 
+    grid-template-areas: 
+      "header"
+      "article"
+      "links"
+      "nav"
+      "footer";
+    grid-template-rows: 80px 1fr 70px 1fr 70px;  
+    grid-template-columns: 1fr;
+    color: white;
+    
+ }
+}
+#pageHeader {
+  grid-area: header;
+}
+#pageFooter {
+  grid-area: footer;
+}
+#mainArticle { 
+  grid-area: article;      
+  }
+#mainNav { 
+  grid-area: nav; 
+  }
+#links { 
+  grid-area: links; 
+  }
+header, footer, article, nav, div {
+  padding: 5px;
+  background: blue;
+}
+
+a       {text-decoration: none;
+		padding: 1px;
+		font-weight: bold; }
+
+a:link { color:red; }
+
+a:visited { color:red; }
+
+a:hover { color: white; }
+
+ul  {
+    list-style-image: url('../images/smallball.png');
+    text-align: center;
+}
+
+</style>
+
+<body>
+
+<audio controls autoplay>
+  <source src="gocubsgo.mp3" type="audio/mpeg">
+</audio>
+
+  <header id="pageHeader">
+  <center>
+      <h1>Chicago Cubs Baseball</h1>
+    </center>
+  </header>
+
+  <article id="mainArticle">
+<center>
+  <h1>World Series Highlights 2016</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Xl3iZpcAb2g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br><br>
+  <h1>Top 10 Cubs Comebacks of the Joe Maddon Era</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/n1ZzgqA7yWc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </center>
+
+  </article>
+
+  <nav id="mainNav">
+<center>
+<img src="../images/kevcubs.jpg" style= "width:350px;height:350px;">
+</a>
+</center>
+<center>
+<h2><u>Chicago Cubs 2016 World Series Champions</u></h2>
+<ul>
+
+    <li style= "font-size: 200%">Game 1: CHC: 0 - CLE: 6 | L</li>
+    <li style= "font-size: 200%">Game 2: CHC: 5 - CLE: 1 | <b>W</b></li>
+    <li style= "font-size: 200%">Game 3: CHC: 0 - CLE: 1 | L</li>
+    <li style= "font-size: 200%">Game 4: CHC: 2 - CLE: 7 | L</li>
+    <li style= "font-size: 200%">Game 5: CHC: 3 - CLE: 2 | <b>W</b></li>
+    <li style= "font-size: 200%">Game 6: CHC: 9 - CLE: 3 | <b>W</b></li>
+    <li style= "font-size: 200%">Game 7: CHC: 8 - CLE: 7 | <b>W</b></li>
+
+
+
+
+
+
+</ul>
+
+</center>
+
+  </nav>
+  <div id="links">
+  <ul>
+
+<li style= "font-size: 250%">Anthony Rizzo #44</li>
+<li style= "font-size: 250%">Kris Bryant #17</li>
+<li style= "font-size: 250%">Javier Baez #9</li>
+<li style= "font-size: 250%">Wilson Contreras #40</li>
+<li style= "font-size: 250%">Kyle Schwarber #12</li>
+<li style= "font-size: 250%">Albert Almora Jr. #5</li>
+<li style= "font-size: 250%">Jason Heyward #22</li>
+<li style= "font-size: 250%">Ben Zobrist #18</li>
+<li style= "font-size: 250%">Ian Happ #8</li>
+<li style= "font-size: 250%">Jon Lester #34</li>
+<li style= "font-size: 250%">Kyle Hendricks #28</li>
+<li style= "font-size: 250%">Jose Quintana #62</li>
+<li style= "font-size: 250%">Yu Darvish #11</li>
+<li style= "font-size: 250%">Cole Hamels #35</li>
+<li style= "font-size: 250%">Pedro Strop #46</li>
+<li style= "font-size: 250%">Brandon Morrow #15</li>
+
+
+  </ul>
+
+  </div>
+
+
+
+
+
+  <footer id="pageFooter">
+
+<center>
+<b><font size= "6"><a href="../HomePage/MainHomePage.html">Return to Home Page</a></font></b>
+</center>
+  </footer>
+
+</body>
